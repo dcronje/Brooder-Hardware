@@ -4701,6 +4701,12 @@
 		(uuid "43886186-62f7-4d45-bae8-9ad2785da955")
 	)
 	(junction
+		(at 242.57 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4679bb40-ceb7-4694-933a-0068012ba2a8")
+	)
+	(junction
 		(at 257.81 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4759,6 +4765,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7946c168-0b4e-4443-a4f8-f05ea90cbc25")
+	)
+	(junction
+		(at 242.57 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "827f6125-a9fd-452b-b37e-ec94148893a4")
 	)
 	(junction
 		(at 62.23 177.8)
@@ -5512,6 +5524,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 43.18) (xy 238.76 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f6f0756-2588-4496-b635-b4a459f316cd")
+	)
+	(wire
+		(pts
 			(xy 222.25 95.25) (xy 210.82 95.25)
 		)
 		(stroke
@@ -5612,7 +5634,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 50.8) (xy 240.03 50.8)
+			(xy 252.73 50.8) (xy 242.57 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5892,7 +5914,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 43.18) (xy 238.76 43.18)
+			(xy 252.73 43.18) (xy 242.57 43.18)
 		)
 		(stroke
 			(width 0)
@@ -7049,6 +7071,16 @@
 			(type default)
 		)
 		(uuid "dcf7f969-8442-4a4f-855f-47a9957e4fb8")
+	)
+	(wire
+		(pts
+			(xy 242.57 50.8) (xy 240.03 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de54279d-8185-4992-8423-21cbf8a2d11f")
 	)
 	(wire
 		(pts
@@ -10643,7 +10675,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Sensor:DS18B20_SMD"
 			(at 121.92 58.42 0)
 			(effects
 				(font
@@ -13627,6 +13659,76 @@
 			(project "Brooder"
 				(path "/9041d520-f59c-4387-8e49-bb57372058b5"
 					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 242.57 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbf688ac-ddb2-4fb3-8fb8-aeba0733d3ef")
+		(property "Reference" "D2"
+			(at 245.11 46.0374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 245.11 48.5774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 247.015 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 242.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 242.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92149804-c6ff-4e92-801d-46668110c44a")
+		)
+		(pin "2"
+			(uuid "78103a79-797b-492c-8888-2b8b4e7d207c")
+		)
+		(instances
+			(project "Brooder"
+				(path "/9041d520-f59c-4387-8e49-bb57372058b5"
+					(reference "D2")
 					(unit 1)
 				)
 			)
